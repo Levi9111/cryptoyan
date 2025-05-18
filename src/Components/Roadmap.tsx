@@ -22,11 +22,11 @@ const Roadmap = () => {
           <div>
             <h3 className="text-[#e4e3e3] text-[28px] sm:text-[72px] font-[275]  leading-[1.2] sm:leading-[110%] tracking-[-1%] sm:tracking-[-2%]">
               <span className="sm:hidden">//</span>
-              CryptoYan Roadmap
+              CAYANBOT Roadmap
             </h3>
 
             <p className="text-base sm:text-[24px] leading-[1.4] sm:leading-[150%] font-[275] mt-6 sm:mt-8">
-              CryptoYan’s journey is just beginning — from AI optimization to
+              YANBOT’s journey is just beginning — from AI optimization to
               multi-token
               <span className="md:block" /> support, every phase unlocks smarter
               investing. Our roadmap is built to evolve
@@ -117,7 +117,7 @@ const Roadmap = () => {
               //Q2 2025 – Launch & Validation
             </h3>
 
-            <ul className="mt-6 sm:mt-8 list-disc flex flex-col gap-3 sm:gap-4 text-[13px] sm:text-xl font-[275] leading-[1.4] sm:leading-[150%]">
+            <ul className="mt-6 sm:ml-8 sm:mt-8 list-disc flex flex-col gap-3 sm:gap-4 text-[13px] sm:text-xl font-[275] leading-[1.4] sm:leading-[150%]">
               <li>Launch of YAN token on the TON blockchain</li>
               <li>Listing on DEX</li>
               <li>
@@ -144,7 +144,7 @@ const Roadmap = () => {
               Scale & Trust
             </h3>
 
-            <ul className="mt-6 sm:mt-8 list-disc flex flex-col gap-3 sm:gap-4 text-[13px] sm:text-xl font-[275] leading-[1.4] sm:leading-[150%]">
+            <ul className="mt-6 sm:ml-7 sm:mt-8 list-disc flex flex-col gap-3 sm:gap-4 text-[13px] sm:text-xl font-[275] leading-[1.4] sm:leading-[150%]">
               <li>Launch of participant verification modules</li>
               <li>
                 Integration of live data and pool information into the website
@@ -164,7 +164,7 @@ const Roadmap = () => {
               Expansion
             </h3>
 
-            <ul className="mt-6 sm:mt-8 list-disc flex flex-col gap-3 sm:gap-4 text-[13px] sm:text-xl font-[275] leading-[1.4] sm:leading-[150%]">
+            <ul className="mt-6 sm:ml-7 sm:mt-8 list-disc flex flex-col gap-3 sm:gap-4 text-[13px] sm:text-xl font-[275] leading-[1.4] sm:leading-[150%]">
               <li>Implementation of an AI agent with adaptive behavior</li>
               <li>
                 Addition of new assets and multi-pool support to expand user

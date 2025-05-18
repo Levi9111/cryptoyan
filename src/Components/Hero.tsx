@@ -84,7 +84,7 @@ const Hero = () => {
               About
             </h3>
             <p className="text-lg sm:text-2xl leading-[140%] font-extralight max-w-[640px]">
-              CryptoYan is an AI that analyzes the market and finds the right
+              YANBOT is an AI that analyzes the market and finds the right
               moment to grow. You just join. It does the rest.
             </p>
           </div>
@@ -133,7 +133,7 @@ const Hero = () => {
             </h3>
             <p className="text-4xl leading-[140%] text-center font-extralight max-w-[640px]">
               {" "}
-              CryptoYan is an AI that analyzes the market and finds the right
+              YANBOT is an AI that analyzes the market and finds the right
               moment to grow. you just join. it does the rest.
             </p>
           </div>
@@ -178,7 +178,7 @@ const Hero = () => {
           </h3>
 
           <p className="mt-1 font-extralight  text-[18px] text-center leading-[150%]">
-            CryptoYan is your pocket-
+            YANBOT is your pocket-
             <br />
             sized AI financial assistant.
           </p>
@@ -196,7 +196,7 @@ const Hero = () => {
           </h3>
 
           <p className="pt-4 pb-5 text-xl leading-[150%] font-[275] text-center">
-            You join. CryptoYan finds <br />
+            You join. YANBOT finds <br />
             the moment to act.
           </p>
           <img src={diamond} alt="Diamond" width={108} height={135} />

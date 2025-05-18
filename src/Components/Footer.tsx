@@ -45,24 +45,26 @@ const Footer = () => {
                 Connect with us on Telegram to get updates, ask questions, and
                 see how others are growing with CryptoYan.
               </p>
-              <button className="border border-white rounded-full md:w-[180px] md:h-[54px] w-[101px] h-[34px] sm:text-[24px] text-[13px] sm:font-[500] font-[400] sm:leading-[140%] leading-[170%] hover:bg-white hover:text-black transition uppercase">
+              <button className="border border-white rounded-full md:w-[180px] md:h-[54px] w-[101px] h-[34px] sm:text-[24px] text-[13px] sm:font-[500] font-[400] sm:leading-[140%] leading-[170%] text-white hover:bg-[#DCA685]/20  transition-all duration-300 hover:scale-105   uppercase">
                 Let’s talk
               </button>
             </div>
           </div>
 
-          <div className="md:flex hidden absolute bottom-0   gap-[108px]">
+          <div className="md:flex hidden absolute bottom-0 gap-[108px]">
             <a
               href=""
-              className="text-xl font-[275] leading-[150%] text-[#e1dfdf]"
+              className="text-xl font-[275] leading-[150%] text-[#e1dfdf] relative group transition-colors duration-300"
             >
               Terms and conditions
+              <span className="block h-[1px] w-0 bg-[#e1dfdf] group-hover:w-full transition-all duration-300 ease-in-out absolute bottom-0 left-0"></span>
             </a>
             <a
               href=""
-              className=" text-xl font-[275] leading-[150%] text-[#e1dfdf]"
+              className="text-xl font-[275] leading-[150%] text-[#e1dfdf] relative group transition-colors duration-300"
             >
               Privacy policy
+              <span className="block h-[1px] w-0 bg-[#e1dfdf] group-hover:w-full transition-all duration-300 ease-in-out absolute bottom-0 left-0"></span>
             </a>
           </div>
         </div>
@@ -107,17 +109,20 @@ const Footer = () => {
         <div className="relative z-30 md:hidden">
           <a
             href=""
-            className="text-xl font-[275] leading-[150%] text-[#e1dfdf] block mt-[30px] mb-4"
+            className="text-xl font-[275] leading-[150%] text-[#e1dfdf] block mt-[30px] mb-4 relative group transition-opacity duration-300"
           >
             Terms and conditions
+            <span className="block h-[1px] w-0 bg-[#e1dfdf] group-hover:w-[70%] transition-all duration-300 ease-in-out absolute bottom-0 left-0"></span>
           </a>
           <a
             href=""
-            className="text-xl font-[275] leading-[150%] text-[#e1dfdf]"
+            className="text-xl font-[275] leading-[150%] text-[#e1dfdf] relative group transition-opacity duration-300"
           >
             Privacy policy
+            <span className="block h-[1px] w-0 bg-[#e1dfdf] group-hover:w-full transition-all duration-300 ease-in-out absolute bottom-0 left-0"></span>
           </a>
         </div>
+
         <p className="md:hidden font-[275] text-[13px] leading-[170%] text-center mt-11">
           © {new Date().getFullYear()} All rights reserved ||
           support@cryptoyan.org

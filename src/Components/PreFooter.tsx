@@ -22,10 +22,10 @@ const PreFooter = () => {
             Made Effortless.
           </h3>
           <p className="font-poppins font-[275] sm:text-[24px] text-[15px] md:leading-[150%] leading-[130%] text-[#dcdcdc] md:mt-6 mt-[7px] max-w-[950px]">
-            You don’t need to be a trader. Let CryptoYan do the hard work
+            You don’t need to be a trader. Let YANBOT do the hard work
             <span className="md:block" /> while you stay in control.
           </p>
-          <button className="md:mt-10 mt-4 text-white font-[275] md:w-[204px] w-[104px] h-[34px] md:h-[66px] rounded-full md:text-lg text-[13px] border border-white  hover:bg-white hover:text-black transition">
+          <button className="md:mt-10 mt-4  font-[275] md:w-[204px] w-[104px] h-[34px] md:h-[66px] rounded-full md:text-lg text-[13px] border border-white  text-white hover:bg-[#DCA685]/20 hover:text-[#DCA685] transition-all duration-300 hover:scale-105">
             Learn How
           </button>
         </div>

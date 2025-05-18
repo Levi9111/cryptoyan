@@ -5,11 +5,11 @@ import ellipse from "../assets/ellipse.png";
 const cardData = [
   {
     title: "Connect AI:",
-    description: "Send your assets to CryptoYan AI Pool",
+    description: "Send your assets to YANBOT AI Pool",
   },
   {
     title: "AI Market analysis:",
-    description: "CryptoYan scans the market 24/7 using advanced algorithms.",
+    description: "YANBOT scans the market 24/7 using advanced algorithms.",
   },
   {
     title: "Strategic Growth::",
@@ -99,8 +99,7 @@ const HowItWorks = () => {
             <p className="md:text-[24px] text-base font-[275] leading-[150%] md:mt-8 mt-4 md:mb-[70px] mb-10">
               Just connect your wallet and deposit your YAN tokens — that’s it.
               <br />
-              CryptoYan monitors the market in real time and moves when growth
-              is
+              YANBOT monitors the market in real time and moves when growth is
               <br />
               most likely.
             </p>

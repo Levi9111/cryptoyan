@@ -65,7 +65,7 @@ const Navbar = () => {
           ))}
 
           <li>
-            <button className="w-[140px] h-[44px] flex items-center justify-center border rounded-[35px] text-white hover:bg-[#DCA685]/20 hover:text-[#DCA685] transition-all duration-300 hover:scale-105 shadow-md">
+            <button className="w-[140px] h-[44px] flex items-center justify-center border rounded-[35px] text-white hover:bg-[#DCA685]/20 hover:text-[#DCA685] transition-all duration-300 hover:scale-105 shadow-md uppercase">
               Let's talk
             </button>
           </li>
