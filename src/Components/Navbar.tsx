@@ -112,6 +112,14 @@ const Navbar = () => {
             : "-translate-y-full opacity-0 pointer-events-none"
         }`}
       >
+        <li
+          className="list-none cursor-pointer hover:text-[#DCA685] transition-colors duration-300"
+          onClick={() => {
+            window.scrollTo({ top: 250, behavior: "smooth" });
+          }}
+        >
+          <span>About</span>
+        </li>
         {navLinks.map((link) => (
           <li
             key={link.id}
