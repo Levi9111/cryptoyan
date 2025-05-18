@@ -28,17 +28,19 @@ const HowItWorksCard = ({
   title: string;
   description: string;
 }) => (
-  <div className="md:w-[1120px] md:h-[314px] w-full h-max md:pt-[55px] pt-[23px] md:pl-[55px] pl-[28px] md:pb-[46px] pb-[30px] border border-dashed border-[#737272] relative">
-    <h3 className="text-[#e4e3e3] font-[275] text-[66px] leading-[110%]">
+  <div className="md:w-[1120px] md:h-[314px] w-full h-max md:pt-[55px] pt-[23px] md:pl-[55px] pl-[28px] md:pb-[46px] pb-[30px] md:pr-10 pr-4 border border-dashed border-[#737272] relative">
+    <h3 className="text-[#e4e3e3] md:font-[275] font-[300] md:text-[66px] text-[24px] md:leading-[110%] leading-[140%]">
       //{title}
     </h3>
-    <p className="mt-6 mb-10 text-[24px] font-[275]">{description}</p>
-    <button className="text-[#c6c6c6] underline font-medium text-[24px] leading-[145%] uppercase flex items-center gap-3 hover:text-[#DCA685] transition-colors duration-300">
+    <p className="md:mt-6 mt-3 md:mb-10 mb-4 md:text-[24px] text-[15px] font-[275]">
+      {description}
+    </p>
+    <button className="text-[#c6c6c6] underline md:font-medium font-[500] md:text-[24px] text-[15px] md:leading-[145%] leading-[170%] uppercase flex items-center gap-3 hover:text-[#DCA685] transition-colors duration-300">
       Learn how <img src={arrow} alt="arrow" width={15} height={15} />
     </button>
 
     {/* Decorative triangle */}
-    <div className="absolute -right-[2px] -top-[2px] w-[72px] h-[39px] overflow-hidden">
+    <div className="absolute -right-[2px] -top-[2px] md:w-[72px] w-[42px] md:h-[39px] h-[21px] overflow-hidden">
       <div
         className="absolute inset-0 bg-[#737272]"
         style={{ clipPath: "polygon(0 100%, 0 0, 100% 100%)" }}
@@ -85,7 +87,7 @@ const HowItWorks = () => {
           </div>
         </div>
 
-        <div className="flex flex-col items-end gap-20">
+        <div className="flex flex-col items-end sm:gap-20 gap-8">
           {cardData.map((card, index) => (
             <HowItWorksCard
               key={index}

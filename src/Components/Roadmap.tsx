@@ -1,5 +1,6 @@
 import ellipse from "../assets/ellipse.png";
 import line from "../assets/scrolled-line.png";
+import lineMobile from "../assets/scrolled-line-mobile.png";
 import settings from "../assets/settings.png";
 import box from "../assets/box.png";
 import loaunchValidation from "../assets/launch-validation.png";
@@ -15,15 +16,16 @@ const Roadmap = () => {
         className="absolute right-[-300px] top-[-580px] -z-20 w-[1400px] max-w-none pointer-events-none"
       />
 
-      <div className="w-base mt-[220px]">
+      <div className="w-base md:mt-[220px] mt-[59px] px-4 sm:px-0">
         <div className="flex items-start justify-end">
-          <p className="text-[65px]">//</p>
+          <p className="text-[40px] sm:text-[65px] sm:block hidden">//</p>
           <div>
-            <h3 className="text-[#e4e3e3] text-[72px] font-[275] leading-[110%] tracking-[-2%]">
+            <h3 className="text-[#e4e3e3] text-[28px] sm:text-[72px] font-[275]  leading-[1.2] sm:leading-[110%] tracking-[-1%] sm:tracking-[-2%]">
+              <span className="sm:hidden">//</span>
               CryptoYan Roadmap
             </h3>
 
-            <p className="text-[24px] leading-[150%] font-[275] mt-8">
+            <p className="text-base sm:text-[24px] leading-[1.4] sm:leading-[150%] font-[275] mt-6 sm:mt-8">
               CryptoYan’s journey is just beginning — from AI optimization to
               multi-token
               <span className="md:block" /> support, every phase unlocks smarter
@@ -34,7 +36,7 @@ const Roadmap = () => {
           </div>
         </div>
 
-        <div className="mt-[150px] relative h-[2200px] ">
+        <div className="mt-[150px] relative sm:h-[2200px] h-[1300px] px-2 sm:px-0">
           <img
             src={ellipse}
             alt=""
@@ -55,38 +57,67 @@ const Roadmap = () => {
             alt="Star"
             className="absolute right-0 -bottom-[800px]"
           />
-          <img src={line} alt="Scrolled line" className="absolute right-0 " />
+          <img
+            src={line}
+            alt="Scrolled line"
+            className="absolute right-0 md:block hidden"
+          />
+          <img
+            src={lineMobile}
+            alt="Scrolled line"
+            className="absolute w-full h-full left-0 right-0 md:hidden"
+          />
 
           <img
             src={settings}
             alt="Settings"
             width={520}
             height={460}
-            className="absolute -top-[220px]"
+            className="md:block hidden absolute -top-[220px]"
+          />
+          <img
+            src={settings}
+            alt="Settings"
+            width={70}
+            height={62}
+            className="md:hidden absolute -top-[10px]"
           />
           <img
             src={loaunchValidation}
             alt="Launch Validation"
             width={433}
             height={400}
-            className="absolute -right-[80px] top-[440px]"
+            className="absolute md:block hidden -right-[80px] top-[440px]"
+          />
+          <img
+            src={loaunchValidation}
+            alt="Launch Validation"
+            width={82}
+            height={76}
+            className="absolute md:hidden -right-[8px] top-[680px]"
           />
           <img
             src={box}
             alt="Box"
             width={508}
             height={525}
-            className="absolute left-0 -bottom-[220px]"
+            className="absolute md:block hidden left-0 -bottom-[220px]"
+          />
+          <img
+            src={box}
+            alt="Box"
+            width={60}
+            height={62}
+            className="absolute md:hidden left-0 bottom-0"
           />
 
           {/* List 1 */}
-
-          <div className="w-[718px] absolute right-20 top-28">
-            <h3 className="text-[#e4e3e3] font-[275] text-6xl leading-[110%] tracking-[-2%]">
+          <div className="w-full sm:w-[718px] absolute right-0 sm:right-20 sm:top-28 top-20 px-2 sm:px-0">
+            <h3 className="text-[#e4e3e3] font-[275] text-[23px] sm:text-6xl leading-[1.2] sm:leading-[110%] tracking-[-1%] sm:tracking-[-2%]">
               //Q2 2025 – Launch & Validation
             </h3>
 
-            <ul className="mt-8 list-disc flex flex-col gap-4 text-xl font-[275] leading-[150%]">
+            <ul className="mt-6 sm:mt-8 list-disc flex flex-col gap-3 sm:gap-4 text-[13px] sm:text-xl font-[275] leading-[1.4] sm:leading-[150%]">
               <li>Launch of YAN token on the TON blockchain</li>
               <li>Listing on DEX</li>
               <li>
@@ -107,14 +138,13 @@ const Roadmap = () => {
           </div>
 
           {/* List 2 */}
-
-          <div className="w-[718px] absolute right-20 top-[800px]">
-            <h3 className="text-[#e4e3e3] font-[275] text-6xl leading-[110%] tracking-[-2%]">
+          <div className="w-full sm:w-[718px] absolute -right-10 sm:right-20 top-[450px] sm:top-[800px] px-2 sm:px-0">
+            <h3 className="text-[#e4e3e3] font-[275] text-[23px] sm:text-6xl leading-[1.2] sm:leading-[110%] tracking-[-1%] sm:tracking-[-2%]">
               //Q3 2025 – <span className="md:block" />
               Scale & Trust
             </h3>
 
-            <ul className="mt-8 list-disc flex flex-col gap-4 text-xl font-[275] leading-[150%]">
+            <ul className="mt-6 sm:mt-8 list-disc flex flex-col gap-3 sm:gap-4 text-[13px] sm:text-xl font-[275] leading-[1.4] sm:leading-[150%]">
               <li>Launch of participant verification modules</li>
               <li>
                 Integration of live data and pool information into the website
@@ -128,14 +158,13 @@ const Roadmap = () => {
           </div>
 
           {/* List 3 */}
-
-          <div className="w-[718px] absolute right-20 bottom-[260px]">
-            <h3 className="text-[#e4e3e3] font-[275] text-6xl leading-[110%] tracking-[-2%]">
+          <div className="w-full sm:w-[718px] absolute right-0 sm:right-20 bottom-[120px] sm:bottom-[220px] px-2 sm:px-0">
+            <h3 className="text-[#e4e3e3] font-[275] text-[23px] sm:text-6xl leading-[1.2] sm:leading-[110%] tracking-[-1%] sm:tracking-[-2%]">
               //Q4 2025 – Product <span className="md:block" />
               Expansion
             </h3>
 
-            <ul className="mt-8 list-disc flex flex-col gap-4 text-xl font-[275] leading-[150%]">
+            <ul className="mt-6 sm:mt-8 list-disc flex flex-col gap-3 sm:gap-4 text-[13px] sm:text-xl font-[275] leading-[1.4] sm:leading-[150%]">
               <li>Implementation of an AI agent with adaptive behavior</li>
               <li>
                 Addition of new assets and multi-pool support to expand user

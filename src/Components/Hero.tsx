@@ -26,7 +26,7 @@ const Hero = () => {
       />
 
       {/* Headline & Sphere */}
-      <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-8 w-full max-w-[1440px] mx-auto px-4 relative text-center sm:text-right">
+      <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-8 w-full max-w-[1540px] mx-auto px-4 relative text-center sm:text-right">
         <img
           src={stars}
           alt="Stars"
@@ -42,7 +42,7 @@ const Hero = () => {
 
         {/* Left text (desktop only) */}
         <h1 className="hidden sm:block font-extralight text-[40px] md:text-[60px] lg:text-[80px] 2xl:text-[95px] leading-[110%] tracking-[0.02em] text-right z-10">
-          A financial <br className="md:block hidden" /> AI Assistant
+          A financial <br /> AI Assistant
         </h1>
 
         {/* Sphere Image */}
