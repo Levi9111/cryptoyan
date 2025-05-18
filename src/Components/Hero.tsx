@@ -107,18 +107,20 @@ const Hero = () => {
 
       {/* Explore more section Desktop */}
       <div className="w-base sm:flex hidden items-center justify-center  relative">
-        <button
-          className="group w-[177px] h-[177px] bg-[#D3554E] rounded-full translate-x-1.5 flex items-center justify-center rotate-[30deg] transition-all duration-500 ease-in-out hover:rotate-[-10deg] hover:scale-105 cursor-pointer"
-          style={{
-            backgroundImage: "linear-gradient(90deg,#D3554E 0%, #D9D9D9 30%)",
-          }}
-        >
-          <div className="w-[170px] h-[172px] bg-[#D9D9D9] rounded-full flex items-center justify-center transition-colors duration-500 ease-in-out group-hover:bg-white">
-            <p className="text-black font-[400] text-[24px] text-center uppercase transition-transform duration-500 group-hover:scale-105 group-hover:tracking-wider">
-              Explore <br /> more
-            </p>
-          </div>
-        </button>
+        <a href="https://t.me/tokenyan" target="_blank">
+          <button
+            className="group w-[177px] h-[177px] bg-[#D3554E] rounded-full translate-x-1.5 flex items-center justify-center rotate-[30deg] transition-all duration-500 ease-in-out hover:rotate-[-10deg] hover:scale-105 cursor-pointer"
+            style={{
+              backgroundImage: "linear-gradient(90deg,#D3554E 0%, #D9D9D9 30%)",
+            }}
+          >
+            <div className="w-[170px] h-[172px] bg-[#D9D9D9] rounded-full flex items-center justify-center transition-colors duration-500 ease-in-out group-hover:bg-white">
+              <p className="text-black font-[400] text-[24px] text-center uppercase transition-transform duration-500 group-hover:scale-105 group-hover:tracking-wider">
+                Explore <br /> more
+              </p>
+            </div>
+          </button>
+        </a>
 
         <div
           className="w-[426px] h-[426px] md:w-[726px] md:h-[726px] lg:w-[826px] lg:h-[826px] 2xl:w-[920px] 2xl:h-[920px]  bg-white rounded-full absolute -z-10 top-16 flex items-center justify-center"
@@ -201,14 +203,16 @@ const Hero = () => {
           </p>
           <img src={diamond} alt="Diamond" width={108} height={135} />
 
-          <button
-            className="mt-[14px] w-[230px] h-[52px] bg-[#433838] text-center text-xl leading-[145%] uppercase tracking-[-2%] text-white transition-all duration-300 ease-in-out hover:bg-[#5c4f4f] hover:scale-[1.03] hover:shadow-lg cursor-pointer"
-            style={{
-              backdropFilter: "blur(4px)",
-            }}
-          >
-            Learn more
-          </button>
+          <a href="https://t.me/tokenyan" target="_blank">
+            <button
+              className="mt-[14px] w-[230px] h-[52px] bg-[#433838] text-center text-xl leading-[145%] uppercase tracking-[-2%] text-white transition-all duration-300 ease-in-out hover:bg-[#5c4f4f] hover:scale-[1.03] hover:shadow-lg cursor-pointer"
+              style={{
+                backdropFilter: "blur(4px)",
+              }}
+            >
+              Learn more
+            </button>
+          </a>
         </div>
       </div>
     </section>

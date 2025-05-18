@@ -7,6 +7,12 @@ import x from "../assets/x.png";
 import social from "../assets/social.png";
 import sphere from "../assets/sphere.png";
 
+const socials = [
+  { icon: telegram, path: "" },
+  { icon: social, path: "" },
+  { icon: x, path: "https://x.com/yanbot_ai" },
+];
+
 const Footer = () => {
   return (
     <footer className="md:mt-[152px] relative overflow-hidden md:pb-10 pb-4 md:pl-0 pl-2">
@@ -45,9 +51,12 @@ const Footer = () => {
                 Connect with us on Telegram to get updates, ask questions, and
                 see how others are growing with CryptoYan.
               </p>
-              <button className="border border-white rounded-full md:w-[180px] md:h-[54px] w-[101px] h-[34px] sm:text-[24px] text-[13px] sm:font-[500] font-[400] sm:leading-[140%] leading-[170%] text-white hover:bg-[#DCA685]/20  transition-all duration-300 hover:scale-105   uppercase">
-                Let’s talk
-              </button>
+
+              <a href="https://t.me/cryptoyan_chat" target="_blank">
+                <button className="border border-white rounded-full md:w-[180px] md:h-[54px] w-[101px] h-[34px] sm:text-[24px] text-[13px] sm:font-[500] font-[400] sm:leading-[140%] leading-[170%] text-white hover:bg-[#DCA685]/20  transition-all duration-300 hover:scale-105   uppercase">
+                  Let’s talk
+                </button>
+              </a>
             </div>
           </div>
 
@@ -72,32 +81,33 @@ const Footer = () => {
 
         <div className="flex items-center justify-between max-w-[1230px] mx-auto ">
           <div className="flex md:gap-6 gap-4">
-            {[telegram, social, x].map((icon, i) => (
-              <button
-                key={i}
-                className="group md:w-[90px] w-10 md:h-[90px] h-10 rounded-full flex items-center justify-center cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(255,255,255,0.2)]"
-                style={{
-                  backgroundImage:
-                    "linear-gradient(180deg, #FFFFFF 0%, #161614 36.16%)",
-                }}
-              >
-                <div className="md:w-[86px] w-9 md:h-[86px] h-9 bg-[#161614] rounded-full z-20 flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:bg-[#1d1d1b]">
-                  <img
-                    src={icon}
-                    alt="social"
-                    width={42}
-                    height={36}
-                    className="md:block hidden transition-transform duration-300 group-hover:scale-110"
-                  />
-                  <img
-                    src={icon}
-                    alt="social"
-                    width={18}
-                    height={16}
-                    className="md:hidden transition-transform duration-300 group-hover:scale-110"
-                  />
-                </div>
-              </button>
+            {socials.map((icon, i) => (
+              <a href={icon.path} key={i} target="_blank">
+                <button
+                  className="group md:w-[90px] w-10 md:h-[90px] h-10 rounded-full flex items-center justify-center cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(255,255,255,0.2)]"
+                  style={{
+                    backgroundImage:
+                      "linear-gradient(180deg, #FFFFFF 0%, #161614 36.16%)",
+                  }}
+                >
+                  <div className="md:w-[86px] w-9 md:h-[86px] h-9 bg-[#161614] rounded-full z-20 flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:bg-[#1d1d1b]">
+                    <img
+                      src={icon.icon}
+                      alt="social"
+                      width={42}
+                      height={36}
+                      className="md:block hidden transition-transform duration-300 group-hover:scale-110"
+                    />
+                    <img
+                      src={icon.icon}
+                      alt="social"
+                      width={18}
+                      height={16}
+                      className="md:hidden transition-transform duration-300 group-hover:scale-110"
+                    />
+                  </div>
+                </button>
+              </a>
             ))}
           </div>
 

@@ -1,4 +1,3 @@
-import arrow from "../assets/Vector.png";
 import stars from "../assets/star-reversed.png";
 import ellipse from "../assets/ellipse.png";
 
@@ -12,7 +11,7 @@ const cardData = [
     description: "YANBOT scans the market 24/7 using advanced algorithms.",
   },
   {
-    title: "Strategic Growth::",
+    title: "Strategic Growth:",
     description: "When the time is right, it moves your tokens—automatically.",
   },
   {
@@ -38,26 +37,29 @@ const HowItWorksCard = ({
     <p className="md:mt-6 mt-3 md:mb-10 mb-4 md:text-[24px] text-[15px] font-[275]">
       {description}
     </p>
-    <button
-      className="
+
+    {/* <a href="https://t.me/tokenyan" target="_blank">
+      <button
+        className="
     text-[#c6c6c6] underline md:font-medium font-[500] md:text-[24px] text-[15px] md:leading-[145%] leading-[170%] uppercase 
     flex items-center gap-3 
     hover:text-[#DCA685] transition-colors duration-300
     group cursor-pointer
   "
-    >
-      Learn how
-      <img
-        src={arrow}
-        alt="arrow"
-        width={15}
-        height={15}
-        className="
+      >
+        Learn how
+        <img
+          src={arrow}
+          alt="arrow"
+          width={15}
+          height={15}
+          className="
       transform transition-transform duration-300 ease-in-out
       group-hover:translate-x-2
     "
-      />
-    </button>
+        />
+      </button>
+    </a> */}
 
     {/* Decorative triangle */}
     <div className="absolute -right-[2px] -top-[2px] md:w-[72px] w-[42px] md:h-[39px] h-[21px] overflow-hidden">

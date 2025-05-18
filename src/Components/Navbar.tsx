@@ -75,9 +75,11 @@ const Navbar = () => {
           ))}
 
           <li>
-            <button className="w-[140px] h-[44px] flex items-center justify-center border rounded-[35px] text-white hover:bg-[#DCA685]/20 hover:text-[#DCA685] transition-all duration-300 hover:scale-105 shadow-md uppercase">
-              Let's talk
-            </button>
+            <a href="https://t.me/cryptoyan_chat" target="_blank">
+              <button className="w-[140px] h-[44px] flex items-center justify-center border rounded-[35px] text-white hover:bg-[#DCA685]/20 hover:text-[#DCA685] transition-all duration-300 hover:scale-105 shadow-md uppercase">
+                Let's talk
+              </button>
+            </a>
           </li>
 
           <li className="cursor-pointer hover:text-[#DCA685] md:block hidden">
@@ -113,10 +115,13 @@ const Navbar = () => {
             <span>{link.title}</span>
           </li>
         ))}
+
         <li className="list-none">
-          <button className="w-[140px] h-[44px] flex items-center justify-center border rounded-[35px] text-white hover:bg-[#DCA685]/20 hover:text-[#DCA685] transition-all duration-300 hover:scale-105 shadow-md">
-            Let's talk
-          </button>
+          <a href=" https://t.me/cryptoyan_chat" target="_blank">
+            <button className="w-[140px] h-[44px] flex items-center justify-center border rounded-[35px] text-white hover:bg-[#DCA685]/20 hover:text-[#DCA685] transition-all duration-300 hover:scale-105 shadow-md">
+              Let's talk
+            </button>
+          </a>
         </li>
       </div>
     </nav>
