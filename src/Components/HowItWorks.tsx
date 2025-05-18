@@ -28,7 +28,7 @@ const HowItWorksCard = ({
   title: string;
   description: string;
 }) => (
-  <div className="md:w-[1120px] md:h-[314px] w-full h-max pt-[55px] pl-[55px] pb-[46px] border border-dashed border-[#737272] relative">
+  <div className="md:w-[1120px] md:h-[314px] w-full h-max md:pt-[55px] pt-[23px] md:pl-[55px] pl-[28px] md:pb-[46px] pb-[30px] border border-dashed border-[#737272] relative">
     <h3 className="text-[#e4e3e3] font-[275] text-[66px] leading-[110%]">
       //{title}
     </h3>
