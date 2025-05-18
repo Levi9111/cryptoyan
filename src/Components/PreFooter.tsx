@@ -17,7 +17,7 @@ const PreFooter = () => {
 
           {/* Text Content */}
           <h3 className="font-poppins font-[275] sm:text-[72px] text-[24px] sm:leading-[110%] leadig-[130%] text-white">
-            //AI-Powered Finance.
+            AI-Powered Finance.
             <span className="block" />
             Made Effortless.
           </h3>

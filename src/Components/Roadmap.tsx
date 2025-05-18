@@ -18,10 +18,8 @@ const Roadmap = () => {
 
       <div className="w-base md:mt-[220px] mt-[59px] px-4 sm:px-0">
         <div className="flex items-start justify-end">
-          <p className="text-[40px] sm:text-[65px] sm:block hidden">//</p>
           <div>
             <h3 className="text-[#e4e3e3] text-[28px] sm:text-[72px] font-[275]  leading-[1.2] sm:leading-[110%] tracking-[-1%] sm:tracking-[-2%]">
-              <span className="sm:hidden">//</span>
               CAYANBOT Roadmap
             </h3>
 
@@ -114,7 +112,7 @@ const Roadmap = () => {
           {/* List 1 */}
           <div className="w-full sm:w-[718px] absolute right-0 sm:right-20 sm:top-28 top-20 px-2 sm:px-0">
             <h3 className="text-[#e4e3e3] font-[275] text-[23px] sm:text-6xl leading-[1.2] sm:leading-[110%] tracking-[-1%] sm:tracking-[-2%]">
-              //Q2 2025 – Launch & Validation
+              Q2 2025 – Launch & Validation
             </h3>
 
             <ul className="mt-6 sm:ml-8 sm:mt-8 list-disc flex flex-col gap-3 sm:gap-4 text-[13px] sm:text-xl font-[275] leading-[1.4] sm:leading-[150%]">
@@ -140,7 +138,7 @@ const Roadmap = () => {
           {/* List 2 */}
           <div className="w-full sm:w-[718px] absolute -right-10 sm:right-20 top-[450px] sm:top-[800px] px-2 sm:px-0">
             <h3 className="text-[#e4e3e3] font-[275] text-[23px] sm:text-6xl leading-[1.2] sm:leading-[110%] tracking-[-1%] sm:tracking-[-2%]">
-              //Q3 2025 – <span className="md:block" />
+              Q3 2025 – <span className="md:block" />
               Scale & Trust
             </h3>
 
@@ -160,7 +158,7 @@ const Roadmap = () => {
           {/* List 3 */}
           <div className="w-full sm:w-[718px] absolute right-0 sm:right-20 bottom-[120px] sm:bottom-[220px] px-2 sm:px-0">
             <h3 className="text-[#e4e3e3] font-[275] text-[23px] sm:text-6xl leading-[1.2] sm:leading-[110%] tracking-[-1%] sm:tracking-[-2%]">
-              //Q4 2025 – Product <span className="md:block" />
+              Q4 2025 – Product <span className="md:block" />
               Expansion
             </h3>
 

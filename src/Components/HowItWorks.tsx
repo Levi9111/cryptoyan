@@ -32,7 +32,7 @@ const HowItWorksCard = ({
     className="md:w-[1120px] md:h-[314px] w-full h-max md:pt-[55px] pt-[23px] md:pl-[55px] pl-[28px] md:pb-[46px] pb-[30px] md:pr-10 pr-4 border border-dashed border-[#737272] relative z-20"
   >
     <h3 className="text-[#e4e3e3] md:font-[275] font-[300] md:text-[66px] text-[24px] md:leading-[110%] leading-[140%]">
-      //{title}
+      {title}
     </h3>
     <p className="md:mt-6 mt-3 md:mb-10 mb-4 md:text-[24px] text-[15px] font-[275]">
       {description}
@@ -93,10 +93,9 @@ const HowItWorks = () => {
         />
 
         <div className="w-full md:flex">
-          <p className="text-[75px] md:block hidden">//</p>
           <div>
             <h3 className="md:text-[90px] text-[32px] md:font-[275] font-[300] md:leading-[110%] leading-[130%] text-[#E4E3E3]">
-              <span className="md:hidden">//</span> How it works
+              How it works
             </h3>
             <p className="md:text-[24px] text-base font-[275] leading-[150%] md:mt-8 mt-4 md:mb-[70px] mb-10">
               Just connect your wallet and deposit your YAN tokens — that’s it.

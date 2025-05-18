@@ -176,7 +176,7 @@ const Hero = () => {
             </div>
           </div>
           <h3 className="text-[32px] font-extralight leading-[140%] text-center uppercase text-[#E1DFDF]">
-            // Phase 1
+            Phase 1
           </h3>
 
           <p className="mt-1 font-extralight  text-[18px] text-center leading-[150%]">

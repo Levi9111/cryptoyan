@@ -42,10 +42,9 @@ const Footer = () => {
       <div className="w-base">
         <div className="mt-[84px] h-[250px] relative">
           <div className="flex items-start max-w-[728px] md:absolute md:right-20 ">
-            <p className="text-[56px] md:block hidden">//</p>
             <div className="text-left">
               <h3 className="font-[275] md:text-[66px] text-[32px] md:leading-[110%] leading-[130%] text-[#e4e3e3]">
-                <span className="md:hidden">//</span> Join Us
+                Join Us
               </h3>
               <p className="font-[275] md:text-xl text-baes md:leading-[150%] leading-[170%] md:my-8 mt-3 mb-6 ">
                 Connect with us on Telegram to get updates, ask questions, and
