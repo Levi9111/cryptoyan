@@ -25,9 +25,11 @@ const PreFooter = () => {
             You don’t need to be a trader. Let YANBOT do the hard work
             <span className="md:block" /> while you stay in control.
           </p>
-          <button className="md:mt-10 mt-4  font-[275] md:w-[204px] w-[104px] h-[34px] md:h-[66px] rounded-full md:text-lg text-[13px] border border-white  text-white hover:bg-[#DCA685]/20 hover:text-[#DCA685] transition-all duration-300 hover:scale-105">
-            Learn How
-          </button>
+          <a href="https://t.me/tokenyan" target="_blank">
+            <button className="md:mt-10 mt-4  font-[275] md:w-[204px] w-[104px] h-[34px] md:h-[66px] rounded-full md:text-lg text-[13px] border border-white  text-white hover:bg-[#DCA685]/20 hover:text-[#DCA685] transition-all duration-300 hover:scale-105">
+              Learn How
+            </button>
+          </a>
         </div>
       </div>
     </section>

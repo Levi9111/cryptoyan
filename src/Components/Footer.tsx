@@ -8,7 +8,7 @@ import social from "../assets/social.png";
 import sphere from "../assets/sphere.png";
 
 const socials = [
-  { icon: telegram, path: "" },
+  { icon: telegram, path: "https://t.me/cryptoyan_chat" },
   { icon: social, path: "" },
   { icon: x, path: "https://x.com/yanbot_ai" },
 ];

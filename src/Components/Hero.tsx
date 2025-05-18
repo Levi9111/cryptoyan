@@ -7,8 +7,16 @@ import personIcon from "../assets/person-icon.png";
 import shieldIcon from "../assets/shield-icon.png";
 import stars from "../assets/star.png";
 import ellipse from "../assets/ellipse.png";
+import { useState } from "react";
 
 const Hero = () => {
+  const [clicked, setClicked] = useState(false);
+
+  const handleClick = () => {
+    setClicked(true);
+    setTimeout(() => setClicked(false), 300); // Reset after animation
+    // Trigger actual explore functionality here
+  };
   return (
     <section className="md:pt-36 pt-16 relative">
       {/* Background ellipse */}
@@ -92,12 +100,17 @@ const Hero = () => {
 
         {/* Explore Button */}
         <div
-          className="w-[99px] h-[99px] sm:w-[150px] sm:h-[150px] md:w-[177px] md:h-[177px] bg-[#D3554E] rounded-full md:translate-x-2.5 flex sm:hidden items-center justify-center rotate-[30deg] z-10"
+          onClick={handleClick}
+          className={`w-[99px] h-[99px] sm:w-[150px] sm:h-[150px] md:w-[177px] md:h-[177px] 
+      bg-[#D3554E] rounded-full md:translate-x-2.5 flex sm:hidden items-center 
+      justify-center rotate-[30deg] z-30 cursor-pointer 
+      transition-transform duration-300 ease-out 
+      ${clicked ? "scale-110 " : "scale-100"}`}
           style={{
             backgroundImage: "linear-gradient(90deg,#D3554E 0%, #D9D9D9 30%)",
           }}
         >
-          <div className="w-[96px] h-[96px] sm:w-[140px] sm:h-[140px] md:w-[170px] md:h-[172px] bg-[#D9D9D9] rounded-full flex  items-center justify-center">
+          <div className="w-[96px] h-[96px] sm:w-[140px] sm:h-[140px] md:w-[170px] md:h-[172px] bg-[#D9D9D9] rounded-full flex items-center justify-center">
             <p className="text-black font-[400] text-sm sm:text-lg text-center uppercase">
               Explore <br /> more
             </p>
