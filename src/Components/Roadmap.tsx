@@ -20,7 +20,7 @@ const Roadmap = () => {
         <div className="flex items-start justify-end">
           <div>
             <h3 className="text-[#e4e3e3] text-[28px] sm:text-[72px] font-[275]  leading-[1.2] sm:leading-[110%] tracking-[-1%] sm:tracking-[-2%]">
-              CAYANBOT Roadmap
+              YANBOT Roadmap
             </h3>
 
             <p className="text-base sm:text-[24px] leading-[1.4] sm:leading-[150%] font-[275] mt-6 sm:mt-8">

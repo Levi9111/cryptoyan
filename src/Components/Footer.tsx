@@ -9,7 +9,10 @@ import sphere from "../assets/sphere.png";
 
 const socials = [
   { icon: telegram, path: "https://t.me/cryptoyan_chat" },
-  { icon: social, path: "" },
+  {
+    icon: social,
+    path: "https://dexscreener.com/ton/eqb64hjtcadjyg0u4_ryv7owou5fynb89codcy2zj4cnn-ym",
+  },
   { icon: x, path: "https://x.com/yanbot_ai" },
 ];
 
