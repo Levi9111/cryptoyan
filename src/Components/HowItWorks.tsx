@@ -28,7 +28,7 @@ const HowItWorksCard = ({
   title: string;
   description: string;
 }) => (
-  <div className="w-[1120px] h-[314px] pt-[55px] pl-[55px] pb-[46px] border border-dashed border-[#737272] relative">
+  <div className="md:w-[1120px] md:h-[314px] w-full h-max pt-[55px] pl-[55px] pb-[46px] border border-dashed border-[#737272] relative">
     <h3 className="text-[#e4e3e3] font-[275] text-[66px] leading-[110%]">
       //{title}
     </h3>
@@ -53,29 +53,28 @@ const HowItWorksCard = ({
 
 const HowItWorks = () => {
   return (
-    <section className="relative overflow-hidden">
-      <img
-        src={ellipse}
-        alt=""
-        width={1400}
-        height={126}
-        className="absolute -left-[300px] top-[700px]"
-      />
-
-      <div className="relative w-base mt-[540px] ">
+    <section className="relative">
+      <div className="relative w-base md:mt-[540px] mt-[220px]">
+        <img
+          src={ellipse}
+          alt=""
+          width={1400}
+          height={126}
+          className="absolute -left-[300px] top-[700px]"
+        />
         <img
           src={stars}
           alt="Stars"
           className="absolute left-0 right-0 bottom-0 z-10"
         />
 
-        <div className="w-full flex">
-          <p className="text-[75px]">//</p>
+        <div className="w-full md:flex">
+          <p className="text-[75px] md:block hidden">//</p>
           <div>
-            <h3 className="text-[90px] font-[275] leading-[110%] text-[#E4E3E3]">
-              How it works
+            <h3 className="md:text-[90px] text-[32px] md:font-[275] font-[300] md:leading-[110%] leading-[130%] text-[#E4E3E3]">
+              <span className="md:hidden">//</span> How it works
             </h3>
-            <p className="text-[24px] font-[275] leading-[150%] mt-8 mb-[70px]">
+            <p className="md:text-[24px] text-base font-[275] leading-[150%] md:mt-8 mt-4 md:mb-[70px] mb-10">
               Just connect your wallet and deposit your YAN tokens — that’s it.
               <br />
               CryptoYan monitors the market in real time and moves when growth
