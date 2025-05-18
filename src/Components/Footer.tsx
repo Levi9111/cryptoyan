@@ -70,84 +70,35 @@ const Footer = () => {
 
         <div className="flex items-center justify-between max-w-[1230px] mx-auto ">
           <div className="flex md:gap-6 gap-4">
-            {/* btn 1 */}
-            <button
-              className="md:w-[90px] w-10 md:h-[90px] h-10 rounded-full flex items-center justify-center cursor-pointer"
-              style={{
-                backgroundImage:
-                  "linear-gradient(180deg, #FFFFFF 0%, #161614 36.16%)",
-              }}
-            >
-              <div className="md:w-[86px] w-9 md:h-[86px] h-9 bg-[#161614] rounded-full z-20 flex items-center justify-center">
-                <img
-                  src={telegram}
-                  alt="Telegram"
-                  width={42}
-                  height={36}
-                  className="md:block hidden"
-                />
-                <img
-                  src={telegram}
-                  alt="Telegram"
-                  width={18}
-                  height={16}
-                  className="md:hidden"
-                />
-              </div>
-            </button>
-
-            {/* btn 2 */}
-            <button
-              className="md:w-[90px] w-10 md:h-[90px] h-10 rounded-full flex items-center justify-center cursor-pointer"
-              style={{
-                backgroundImage:
-                  "linear-gradient(180deg, #FFFFFF 0%, #161614 36.16%)",
-              }}
-            >
-              <div className="md:w-[86px] w-9 md:h-[86px] h-9 bg-[#161614] rounded-full z-20 flex items-center justify-center">
-                <img
-                  src={social}
-                  alt="Telegram"
-                  width={42}
-                  height={36}
-                  className="md:block hidden"
-                />
-                <img
-                  src={social}
-                  alt="Telegram"
-                  width={17}
-                  height={19}
-                  className="md:hidden"
-                />
-              </div>
-            </button>
-
-            {/* btn 3 */}
-            <button
-              className="md:w-[90px] w-10 md:h-[90px] h-10 rounded-full flex items-center justify-center cursor-pointer"
-              style={{
-                backgroundImage:
-                  "linear-gradient(180deg, #FFFFFF 0%, #161614 36.16%)",
-              }}
-            >
-              <div className="md:w-[86px] w-9 md:h-[86px] h-9 bg-[#161614] rounded-full z-20 flex items-center justify-center">
-                <img
-                  src={x}
-                  alt="x"
-                  width={42}
-                  height={36}
-                  className="md:block hidden"
-                />
-                <img
-                  src={x}
-                  alt="Telegram"
-                  width={16}
-                  height={16}
-                  className="md:hidden"
-                />
-              </div>
-            </button>
+            {[telegram, social, x].map((icon, i) => (
+              <button
+                key={i}
+                className="group md:w-[90px] w-10 md:h-[90px] h-10 rounded-full flex items-center justify-center cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(255,255,255,0.2)]"
+                style={{
+                  backgroundImage:
+                    "linear-gradient(180deg, #FFFFFF 0%, #161614 36.16%)",
+                }}
+              >
+                <div className="md:w-[86px] w-9 md:h-[86px] h-9 bg-[#161614] rounded-full z-20 flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:bg-[#1d1d1b]">
+                  <img
+                    src={icon}
+                    alt="social"
+                    width={42}
+                    height={36}
+                    className="md:block hidden transition-transform duration-300 group-hover:scale-110"
+                  />
+                  <img
+                    src={icon}
+                    alt="social"
+                    width={18}
+                    height={16}
+                    className="md:hidden transition-transform duration-300 group-hover:scale-110"
+                  />
+                </div>
+              </button>
+            ))}
           </div>
+
           <p className="font-poppins font-[275] text-[20px] leading-[150%] text-center md:block hidden">
             © {new Date().getFullYear()} All rights reserved ||
             support@cryptoyan.org

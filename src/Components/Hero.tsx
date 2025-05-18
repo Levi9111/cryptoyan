@@ -10,7 +10,7 @@ import ellipse from "../assets/ellipse.png";
 
 const Hero = () => {
   return (
-    <section className="md:pt-36 pt-6 relative">
+    <section className="md:pt-36 pt-16 relative">
       {/* Background ellipse */}
       <img
         src={ellipse}
@@ -55,12 +55,12 @@ const Hero = () => {
           <img
             src={shade}
             alt="Shade"
-            className="hidden sm:block absolute left-40 -bottom-20 transform -translate-x-1/2  sm:w-[30px] sm:h-[115px]"
+            className="hidden sm:block absolute left-[160px] -bottom-20 transform -translate-x-1/2  w-[50px] sm:h-[135px] -rotate-4"
           />
           <img
             src={shadeMobile}
             alt="Shade"
-            className="sm:hidden absolute left-24  -bottom-7 transform  -translate-x-1 w-[12px] h-[60px] "
+            className="sm:hidden absolute left-24  -bottom-7 transform  -translate-x-1 w-[12px] h-[60px] rotate-6"
           />
         </div>
 
@@ -107,18 +107,18 @@ const Hero = () => {
 
       {/* Explore more section Desktop */}
       <div className="w-base sm:flex hidden items-center justify-center  relative">
-        <div
-          className="w-[177px] h-[177px] bg-[#D3554E] rounded-full translate-x-1.5 flex items-center justify-center rotate-[30deg]"
+        <button
+          className="group w-[177px] h-[177px] bg-[#D3554E] rounded-full translate-x-1.5 flex items-center justify-center rotate-[30deg] transition-all duration-500 ease-in-out hover:rotate-[-10deg] hover:scale-105 cursor-pointer"
           style={{
             backgroundImage: "linear-gradient(90deg,#D3554E 0%, #D9D9D9 30%)",
           }}
         >
-          <div className="w-[170px] h-[172px] bg-[#D9D9D9] rounded-full flex items-center justify-center">
-            <p className="text-black font-[400] text-[24px] text-center uppercase">
+          <div className="w-[170px] h-[172px] bg-[#D9D9D9] rounded-full flex items-center justify-center transition-colors duration-500 ease-in-out group-hover:bg-white">
+            <p className="text-black font-[400] text-[24px] text-center uppercase transition-transform duration-500 group-hover:scale-105 group-hover:tracking-wider">
               Explore <br /> more
             </p>
           </div>
-        </div>
+        </button>
 
         <div
           className="w-[426px] h-[426px] md:w-[726px] md:h-[726px] lg:w-[826px] lg:h-[826px] 2xl:w-[920px] 2xl:h-[920px]  bg-white rounded-full absolute -z-10 top-16 flex items-center justify-center"
@@ -202,7 +202,7 @@ const Hero = () => {
           <img src={diamond} alt="Diamond" width={108} height={135} />
 
           <button
-            className="mt-[14px] w-[230px] h-[52px] bg-[#433838] text-center text-xl leading-[145%] uppercase tracking-[-2%]"
+            className="mt-[14px] w-[230px] h-[52px] bg-[#433838] text-center text-xl leading-[145%] uppercase tracking-[-2%] text-white transition-all duration-300 ease-in-out hover:bg-[#5c4f4f] hover:scale-[1.03] hover:shadow-lg cursor-pointer"
             style={{
               backdropFilter: "blur(4px)",
             }}
