@@ -46,7 +46,7 @@ const Hero = () => {
         </h1>
 
         {/* Sphere Image */}
-        <div className="relative">
+        <div className="relative  2xl:w-[480px] md:w-[400px] sm:w-[350px] flex items-center justify-center">
           <img
             src={sphere}
             alt="Sphere"
@@ -55,7 +55,7 @@ const Hero = () => {
           <img
             src={shade}
             alt="Shade"
-            className="hidden sm:block absolute left-[160px] -bottom-20 transform -translate-x-1/2  w-[50px] sm:h-[135px] -rotate-4"
+            className="hidden sm:block absolute 2xl:left-[170px] left-[140px] -bottom-20  w-[50px] sm:h-[135px] -rotate-4"
           />
           <img
             src={shadeMobile}

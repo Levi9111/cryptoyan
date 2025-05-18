@@ -9,7 +9,7 @@ import starReversed from "../assets/star-reversed.png";
 
 const Roadmap = () => {
   return (
-    <section id="roadmap" className="relative w-full overflow-x-hidden">
+    <section id="roadmap" className="relative w-full ">
       <img
         src={ellipse}
         alt=""
