@@ -13,7 +13,7 @@ const Roadmap = () => {
       <img
         src={ellipse}
         alt=""
-        className="absolute right-[-300px] top-[-580px] -z-20 w-[1400px] max-w-none pointer-events-none"
+        className="absolute right-[-300px] top-[-580px] -z-20 w-[1400px] max-w-none pointer-events-none md:block hidden"
       />
 
       <div className="w-base md:mt-[220px] mt-[59px] px-4 sm:px-0">
@@ -40,12 +40,12 @@ const Roadmap = () => {
           <img
             src={ellipse}
             alt=""
-            className="absolute left-[-300px] -top-[20px] -z-20 w-[1400px] max-w-none pointer-events-none"
+            className="absolute left-[-300px] -top-[20px] -z-20 w-[1400px] max-w-none pointer-events-none md:block hidden"
           />
           <img
             src={ellipse}
             alt=""
-            className="absolute -right-[300px] -bottom-[280px] -z-20 w-[1400px] max-w-none pointer-events-none"
+            className="absolute -right-[300px] -bottom-[280px] -z-20 w-[1400px] max-w-none pointer-events-none md:block hidden"
           />
           <img
             src={star}
