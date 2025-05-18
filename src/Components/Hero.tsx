@@ -105,7 +105,7 @@ const Hero = () => {
       bg-[#D3554E] rounded-full md:translate-x-2.5 flex sm:hidden items-center 
       justify-center rotate-[30deg] z-30 cursor-pointer 
       transition-transform duration-300 ease-out 
-      ${clicked ? "scale-110 " : "scale-100"}`}
+    ${clicked ? "scale-110 " : "scale-100"}`}
           style={{
             backgroundImage: "linear-gradient(90deg,#D3554E 0%, #D9D9D9 30%)",
           }}

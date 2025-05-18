@@ -110,12 +110,12 @@ const Roadmap = () => {
           />
 
           {/* List 1 */}
-          <div className="w-full sm:w-[718px] absolute right-0 sm:right-20 sm:top-28 top-20 px-2 sm:px-0">
+          <div className="w-full sm:w-[718px] absolute right-0 sm:right-20 sm:top-28 top-14 px-2 sm:px-0">
             <h3 className="text-[#e4e3e3] font-[275] text-[23px] sm:text-6xl leading-[1.2] sm:leading-[110%] tracking-[-1%] sm:tracking-[-2%]">
               Q2 2025 – Launch & Validation
             </h3>
 
-            <ul className="mt-6 sm:ml-8 sm:mt-8 list-disc flex flex-col gap-3 sm:gap-4 text-[13px] sm:text-xl font-[275] leading-[1.4] sm:leading-[150%]">
+            <ul className="mt-6 sm:ml-7 ml-3 max-w-[360px] sm:max-w-max sm:mt-8 list-disc flex flex-col gap-3 sm:gap-4 text-[13px] sm:text-xl font-[275] leading-[1.4] sm:leading-[150%]">
               <li>Launch of YAN token on the TON blockchain</li>
               <li>Listing on DEX</li>
               <li>
@@ -142,15 +142,16 @@ const Roadmap = () => {
               Scale & Trust
             </h3>
 
-            <ul className="mt-6 sm:ml-7 sm:mt-8 list-disc flex flex-col gap-3 sm:gap-4 text-[13px] sm:text-xl font-[275] leading-[1.4] sm:leading-[150%]">
+            <ul className="mt-6 sm:ml-7 ml-3 sm:mt-8 max-w-[360px] sm:max-w-max list-disc flex flex-col gap-3 sm:gap-4 text-[13px] sm:text-xl font-[275] leading-[1.4] sm:leading-[150%]">
               <li>Launch of participant verification modules</li>
               <li>
-                Integration of live data and pool information into the website
+                Integration of live data and pool information <br /> into the
+                website
               </li>
               <li>Partnerships with top influencers and Web3 communities</li>
               <li>
-                Creation of a full-featured Telegram Mini App with an asset
-                management interface
+                Creation of a full-featured Telegram Mini <br /> App with an
+                asset management interface
               </li>
             </ul>
           </div>
@@ -162,7 +163,7 @@ const Roadmap = () => {
               Expansion
             </h3>
 
-            <ul className="mt-6 sm:ml-7 sm:mt-8 list-disc flex flex-col gap-3 sm:gap-4 text-[13px] sm:text-xl font-[275] leading-[1.4] sm:leading-[150%]">
+            <ul className="mt-6 sm:ml-7ml-3 sm:mt-8 max-w-[360px] sm:max-w-max list-disc flex flex-col gap-3 sm:gap-4 text-[13px] sm:text-xl font-[275] leading-[1.4] sm:leading-[150%]">
               <li>Implementation of an AI agent with adaptive behavior</li>
               <li>
                 Addition of new assets and multi-pool support to expand user
