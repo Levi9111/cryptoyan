@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import logo from "../assets/logo.png";
+import logoMobile from "../assets/logo-mobile.png";
 import bars from "../assets/bars.png";
 
 const Navbar = () => {
@@ -49,7 +50,16 @@ const Navbar = () => {
           width={180}
           height={36}
           onClick={scrollToTop}
-          className="cursor-pointer transition-transform duration-300 hover:scale-105"
+          className="hidden md:block cursor-pointer transition-transform duration-300 hover:scale-105"
+        />
+
+        <img
+          src={logoMobile}
+          alt="Logo"
+          width={115}
+          height={28}
+          onClick={scrollToTop}
+          className="md:hidden cursor-pointer transition-transform duration-300 hover:scale-105"
         />
 
         {/* Desktop Menu */}
