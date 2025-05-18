@@ -12,16 +12,14 @@ const Navbar = () => {
   };
 
   const navLinks = [
-    { title: "About", id: "about" },
     { title: "How it works", id: "how-it-works" },
     { title: "Roadmap", id: "roadmap" },
   ];
 
   const handleNavClick = (id: string) => {
-    const offset = id === "about" ? 100 : 0;
     const el = document.getElementById(id);
     if (el) {
-      const y = el.getBoundingClientRect().top + window.scrollY - offset;
+      const y = el.getBoundingClientRect().top + window.scrollY;
       window.scrollTo({ top: y, behavior: "smooth" });
     }
     setIsMobileMenuOpen(false);
@@ -64,6 +62,14 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex items-center gap-8 font-poppins text-[16px] transition-colors duration-300">
+          <li
+            className="cursor-pointer hover:text-[#DCA685] transition-colors duration-300"
+            onClick={() => {
+              window.scrollTo({ top: 550, behavior: "smooth" });
+            }}
+          >
+            <span>About</span>
+          </li>
           {navLinks.map((link) => (
             <li
               key={link.title}
