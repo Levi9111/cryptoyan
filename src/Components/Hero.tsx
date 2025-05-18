@@ -11,18 +11,18 @@ const Hero = () => {
   return (
     <section className="pt-[170px] relative">
       <img
-        src={stars}
-        alt="Start"
-        className="absolute -top-12 left-0 right-0"
-      />
-      <img
         src={ellipse}
         alt="Ellipse"
         width={1300}
         height={240}
         className="absolute left-1/2 transform -translate-x-1/2 top-3"
       />
-      <div className="flex items-center justify-center gap-8 w-base mx-auto px-4 ">
+      <div className="flex items-center justify-center gap-8 w-base mx-auto px-4 relative">
+        <img
+          src={stars}
+          alt="Start"
+          className="absolute -top-12 left-0 right-0"
+        />
         <h1 className="font-extralight text-[40px] md:text-[60px] lg:text-[80px] 2xl:text-[95px] leading-[110%] tracking-[0.02em] text-right relative z-10">
           A financial <br className="md:block hidden" /> AI Assistant
         </h1>
